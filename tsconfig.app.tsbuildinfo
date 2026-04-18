@@ -1,1 +1,1 @@
-{"root":["./src/api.ts","./src/main.ts","./src/types.ts","./src/vite-env.d.ts","./src/App.vue","./src/components/DetailPanel.vue","./src/components/HelloWorld.vue","./src/components/PokemonCard.vue","./src/components/SearchBar.vue","./src/components/UsageBar.vue"],"version":"5.9.3"}
+{"root":["./src/api.ts","./src/main.ts","./src/types.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/detailpanel.vue","./src/components/helloworld.vue","./src/components/pokemoncard.vue","./src/components/searchbar.vue","./src/components/usagebar.vue"],"version":"5.9.3"}
