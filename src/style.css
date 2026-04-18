@@ -1,0 +1,71 @@
+:root {
+  --color-bg: #0f1117;
+  --color-surface-1: #171b24;
+  --color-surface-2: #1e2332;
+  --color-border: #2a3040;
+  --color-text: #e8eaf0;
+  --color-muted: #7a8399;
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-alpha: rgba(59,130,246,0.15);
+  --color-accent: #06b6d4;
+  --color-success: #22c55e;
+  --color-success-alpha: rgba(34,197,94,0.12);
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-shadow: rgba(0,0,0,0.4);
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  min-width: 320px;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
