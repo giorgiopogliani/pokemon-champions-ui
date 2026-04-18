@@ -287,7 +287,7 @@ function formatDate(iso: string) {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    max-height: 50vh;
+    /*max-height: 50vh;*/
     overflow-y: auto;
   }
 

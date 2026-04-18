@@ -48,7 +48,7 @@ defineEmits<{
   background: var(--color-surface-1);
   border: 1.5px solid var(--color-border);
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--color-text);
   font-family: inherit;
   outline: none;
