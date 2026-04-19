@@ -38,6 +38,13 @@ function selectPokemon(p: PokemonUsage) {
   showDetail.value = true
 }
 
+function handleSelectTeammate(id: number) {
+  const teammate = meta.value?.pokemon_usage.find(p => p.dex_id === id)
+  if (teammate) {
+    selectPokemon(teammate)
+  }
+}
+
 function closeDetail() {
   showDetail.value = false
 }
@@ -93,7 +100,11 @@ function formatDate(iso: string) {
 
           <section class="detail" :class="{ open: showDetail }">
             <button class="close-btn" @click="closeDetail">&#x2715;</button>
-            <DetailPanel v-if="selected" :pokemon="selected" />
+            <DetailPanel 
+  v-if="selected" 
+  :pokemon="selected" 
+  @select-teammate="handleSelectTeammate" 
+/>
             <div v-else class="placeholder">
               <p>Select a Pokémon to see details</p>
             </div>

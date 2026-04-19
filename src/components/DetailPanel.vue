@@ -155,7 +155,7 @@ function useNameQuery(resource: PokeApiResource, ids: ComputedRef<number[]>) {
       <section v-if="pokemon.top_teammates.length">
         <h3>Top Teammates</h3>
         <div class="teammates">
-          <div v-for="t in pokemon.top_teammates" :key="t.id" class="teammate">
+          <div v-for="t in pokemon.top_teammates" :key="t.id" class="teammate" @click.stop="$emit('select-teammate', t.id)" style="cursor: pointer;">
             <img :src="spriteUrl(t.id)" :alt="teammateName(t.id)" class="tm-sprite" loading="lazy" />
             <span class="tm-name">{{ teammateName(t.id) }}</span>
             <span class="tm-pct">{{ formatPercent(t.usage) }}</span>
